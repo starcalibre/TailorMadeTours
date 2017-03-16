@@ -5,16 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TailorMadeTours"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Tailor-made Tours - Chicago"
+        Width="800"
+        Height="600"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        FontSize="18">
+    
     <StackPanel HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
+        
         <TextBlock x:Name="textBlock"
                    TextWrapping="Wrap" 
                    Text="Tailor-made Tours - Chicago" 
                    FontSize="24" 
                    FontWeight="Bold" />
+        
         <TabControl x:Name="tabControl" 
-                    MinHeight="300">
+                    MinHeight="580">
             <TabItem Header="Tour Stops">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
@@ -25,5 +33,7 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
+        
     </StackPanel>
+    
 </Window>
