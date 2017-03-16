@@ -31,7 +31,7 @@
                 <views:DetailView/>
             </TabItem>
             <TabItem Header="Weekly Calendar">
-                <Grid Background="#FFE5E5E5" />
+                <views:ScheduleView/>
             </TabItem>
         </TabControl>
 
