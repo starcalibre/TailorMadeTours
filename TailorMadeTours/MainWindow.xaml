@@ -25,7 +25,7 @@
         <TabControl x:Name="tabControl"
                     MinHeight="580">
             <TabItem Header="Tour Stops">
-                <Grid Background="#FFE5E5E5" />
+                <views:TourStopsView/>
             </TabItem>
             <TabItem Header="Details">
                 <views:DetailView/>
