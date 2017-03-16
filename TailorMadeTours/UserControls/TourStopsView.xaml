@@ -7,6 +7,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <ListBox x:Name="TourListBox" ItemTemplate="{StaticResource TourTemplate}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <ListBox x:Name="TourListBox" 
+                 ItemTemplate="{StaticResource TourTemplate}"
+                 MaxHeight="500"/>
+        
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1">
+            <Button x:Name="CalcButton"
+                    Content="Calculate Tour Length"
+                    Click="CalcButton_OnClick"/>
+            <TextBlock x:Name="MessageTextBlock"/>
+        </StackPanel>
     </Grid>
 </UserControl>
