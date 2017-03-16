@@ -6,7 +6,24 @@
         xmlns:local="clr-namespace:TailorMadeTours"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <StackPanel HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+        <TextBlock x:Name="textBlock"
+                   TextWrapping="Wrap" 
+                   Text="Tailor-made Tours - Chicago" 
+                   FontSize="24" 
+                   FontWeight="Bold" />
+        <TabControl x:Name="tabControl" 
+                    MinHeight="300">
+            <TabItem Header="Tour Stops">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Details">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Weekly Calendar">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </StackPanel>
 </Window>
